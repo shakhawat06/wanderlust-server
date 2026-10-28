@@ -3,7 +3,7 @@ import { MongoClient } from 'mongodb';
 import 'dotenv/config' 
 
 const app = express()
-const port = 5000
+const port = process.env.PORT
 
 const client = new MongoClient(process.env.MONGODB_URI);
 
